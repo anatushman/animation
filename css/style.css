@@ -130,13 +130,14 @@ a{
 
 }
 a:hover{
+
     background-color:white;
     opacity: 40%;
     border-radius: 2em;
     color: rgb(255, 255, 255);
 }
 section{
-   margin-top: 300px;
+   margin-top: 200px;
    
 }
 h2{
