@@ -133,19 +133,21 @@ a:hover{
     background-color:white;
     opacity: 40%;
     border-radius: 2em;
+    color: rgb(255, 255, 255);
 }
 section{
    margin-top: 300px;
+   
 }
 h2{
     margin-left: 50px;
 
-    color: blue;
+    color: rgb(167, 138, 44);
     font-size: 20px;
 }
 p{
     margin-left: 50px;
-    color: blue;
+    color: rgb(235, 18, 126);
     font-size: 15px;
     width: 700px;
     height: 300px;
@@ -153,7 +155,7 @@ p{
 p,h2 {
   animation-duration: 5s;
   animation-name: slidein;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-direction: alternate;
 }
 @keyframes slidein {
@@ -167,3 +169,82 @@ p,h2 {
     width: 50%;
   }
 }
+/* გულის ანიმაცია */
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 3s infinite;
+  
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+           
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    left: 800px;
+    transform: scale( 0.75 );
+
+  }
+  20%
+  {
+    top: 150px;
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( 0.75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( 0.75 );
+  }
+  100%
+  {
+    transform: scale( 0.75 );
+  }
+}
+
