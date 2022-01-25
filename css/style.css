@@ -169,6 +169,16 @@ p,h2 {
     width: 50%;
   }
 }
+h2:hover{
+  position: relative;
+  left: 300px;
+  transform: scale(1.4);
+}
+p:hover{
+  position: relative;
+  left: 200px;
+  transform: scale(1.4);
+}
 /* გულის ანიმაცია */
 #heart {
     position: relative;
