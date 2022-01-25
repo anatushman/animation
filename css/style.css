@@ -5,7 +5,8 @@
     padding: 0;
 }
 :root {
-    font-size: calc(48px + (60 - 48)*(100vw - 320px)/(1024 - 320));
+   font-size: calc(48px + (60 - 48)*(100vw - 320px)/(1024 - 320));
+    
 }
 body, input {
     color: #fff;
@@ -25,9 +26,9 @@ body {
     overflow: hidden;
 }
 .toggle, .toggle:before, .slot__label, .curtain {
-    transition-property: background-color, transform, visibility;
+    transition-property: transform, visibility;
     transition-duration: 0.25s;
-    transition-timing-function: ease-in, cubic-bezier(0.6,0.2,0.4,1.5), linear;
+    
 }
 .toggle:before, .slot, .slot__label {
     display: block;
@@ -128,5 +129,41 @@ a{
     font-family: cursive;
 
 }
+a:hover{
+    background-color:white;
+    opacity: 40%;
+    border-radius: 2em;
+}
+section{
+   margin-top: 300px;
+}
+h2{
+    margin-left: 50px;
 
+    color: blue;
+    font-size: 20px;
+}
+p{
+    margin-left: 50px;
+    color: blue;
+    font-size: 15px;
+    width: 700px;
+    height: 300px;
+}
+p,h2 {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 50%;
+  }
 
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+}
