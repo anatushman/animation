@@ -17,7 +17,7 @@ body {
              background-image: url(../img/day_shadow.png);
              background-size: cover;
              object-fit: cover;
-             background-size: 1300px 700px;
+             background-size: 225vh 100vh;
 
              background-repeat: no-repeat;
 
@@ -39,7 +39,7 @@ body {
 .toggle:checked, .curtain {
          background-image: url(../img/night_shadow.png);
              object-fit: cover;
-             background-size: 1300px 700px;
+             background-size: 225vh 100vh;
 
              background-repeat: no-repeat;
 }
@@ -137,7 +137,7 @@ a:hover{
     color: rgb(255, 255, 255);
 }
 section{
-   margin-top: 200px;
+   margin-top: 228px;
    
 }
 h2{
